@@ -129,6 +129,15 @@ section {
   border-color: var(--color-orange);
 }
 
+.btn-outline-light {
+  color: var(--color-white);
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-weight: 700;
+  transition: var(--transition-fast);
+}
 /* ===== NAVBAR ===== */
 .main-navbar {
   background-color: rgba(17, 24, 39, 0.96);
@@ -148,4 +157,56 @@ section {
 
 .nav-link:hover {
   color: var(--color-orange) !important;
+}
+
+/* ===== SECTION: HERO ===== */
+.hero-section {
+  color: var(--color-white);
+  background:
+    radial-gradient(circle at top right, rgba(249, 115, 22, 0.28), transparent 32%),
+    linear-gradient(135deg, var(--color-charcoal), var(--color-dark-soft));
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.hero-description {
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.05rem;
+}
+
+.hero-card {
+  padding: 36px;
+  border-radius: var(--radius-large);
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: var(--shadow-medium);
+}
+
+.hero-card h3 {
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.hero-card p {
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 0;
+}
+
+.hero-icon {
+  display: inline-flex;
+  width: 76px;
+  height: 76px;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border-radius: 24px;
+  margin-bottom: 24px;
 }
