@@ -210,3 +210,34 @@ section {
   border-radius: 24px;
   margin-bottom: 24px;
 }
+
+/* ===== SECTION: MASALAH PENGGUNA ===== */
+.info-card {
+  height: 100%;
+  padding: 28px;
+  border-radius: var(--radius-medium);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition-fast);
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-medium);
+}
+
+.info-card i {
+  font-size: 2rem;
+  color: var(--color-orange);
+  margin-bottom: 16px;
+}
+
+.info-card h5 {
+  font-weight: 800;
+}
+
+.info-card p {
+  color: var(--color-muted);
+  margin-bottom: 0;
+}
