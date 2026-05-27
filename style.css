@@ -241,3 +241,28 @@ section {
   color: var(--color-muted);
   margin-bottom: 0;
 }
+
+/* ===== SECTION: ABOUT ===== */
+.about-highlight {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.about-highlight div {
+  padding: 28px;
+  text-align: center;
+  border-radius: var(--radius-medium);
+  background-color: var(--color-off-white);
+  border: 1px solid var(--color-border);
+}
+
+.about-highlight h3 {
+  font-weight: 800;
+  color: var(--color-orange);
+}
+
+.about-highlight p {
+  margin-bottom: 0;
+  color: var(--color-muted);
+}
