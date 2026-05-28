@@ -343,3 +343,23 @@ section {
   padding-left: 20px;
   margin-bottom: 0;
 }
+
+/* ===== SECTION: KILOMETER ===== */
+.km-card {
+  height: 100%;
+  padding: 28px;
+  border-radius: var(--radius-medium);
+  background-color: var(--color-white);
+  border-left: 5px solid var(--color-orange);
+  box-shadow: var(--shadow-soft);
+}
+
+.km-card h4 {
+  font-weight: 800;
+}
+
+.km-card p {
+  color: var(--color-muted);
+  margin-bottom: 0;
+}
+
