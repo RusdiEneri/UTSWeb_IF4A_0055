@@ -362,6 +362,79 @@
       </div>
     </section>
 
+     <!-- ===== SECTION: Simulasi Estimasi Biaya ===== -->
+    <section id="estimator" class="section-padding">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-badge">Estimator</span>
+          <h2>Simulasi Estimasi Biaya Servis</h2>
+          <p>
+            Pilih jenis motor dan layanan untuk melihat estimasi awal.
+          </p>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8">
+            <div class="estimator-box">
+              <form id="estimatorForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="motorType" class="form-label">Jenis Motor</label>
+                    <select id="motorType" class="form-select">
+                      <option value="">Pilih jenis motor</option>
+                      <option value="matic">Matic</option>
+                      <option value="bebek">Bebek</option>
+                      <option value="sport">Sport</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="mainService" class="form-label">Layanan Utama</label>
+                    <select id="mainService" class="form-select">
+                      <option value="">Pilih layanan</option>
+                      <option value="ganti-oli">Ganti Oli</option>
+                      <option value="servis-cvt">Servis CVT</option>
+                      <option value="detailing">Detailing Body</option>
+                      <option value="full-checkup">Full Checkup</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label">Tambahan</label>
+
+                    <div class="form-check">
+                      <input class="form-check-input additional-service" type="checkbox" value="cek-aki" id="cekAki">
+                      <label class="form-check-label" for="cekAki">Cek Aki</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input additional-service" type="checkbox" value="cek-rem" id="cekRem">
+                      <label class="form-check-label" for="cekRem">Cek Rem</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input additional-service" type="checkbox" value="cek-ban" id="cekBan">
+                      <label class="form-check-label" for="cekBan">Cek Ban</label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary-custom">
+                      Hitung Estimasi
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <div id="estimatorResult" class="result-box mt-4">
+                Estimasi biaya akan muncul di sini.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 </body>
 <script>
