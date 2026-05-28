@@ -439,3 +439,12 @@ section {
   font-size: 0.9rem;
   font-weight: 700;
 }
+
+/* ===== SECTION: KONTAK & BOOKING ===== */
+#booking .section-heading p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+#booking .booking-form {
+  color: var(--color-charcoal);
+}
