@@ -383,3 +383,9 @@ section {
   font-weight: 600;
 }
 
+/* ===== SECTION: CHECKLIST MOTOR SEHAT ===== */
+.checklist-box label {
+  margin-left: 8px;
+  font-weight: 600;
+}
+
