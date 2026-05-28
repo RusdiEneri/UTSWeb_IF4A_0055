@@ -111,4 +111,38 @@ $(document).ready(function () {
     `);
   });
 
+  /* ===== DOM VALIDASI FORM BOOKING ===== */
+  // Data booking hanya ditampilkan ulang di halaman.
+
+  $("#bookingForm").on("submit", function (event) {
+    event.preventDefault();
+
+    const customerName = $("#customerName").val().trim();
+    const bookingMotor = $("#bookingMotor").val().trim();
+    const bookingService = $("#bookingService").val();
+    const bookingDate = $("#bookingDate").val();
+
+    if (
+      customerName === "" ||
+      bookingMotor === "" ||
+      bookingService === "" ||
+      bookingDate === ""
+    ) {
+      $("#bookingResult").html(
+        `<span class="text-danger">Semua field booking wajib diisi.</span>`
+      );
+      return;
+    }
+
+    $("#bookingResult").html(`
+      <strong>Booking berhasil dibuat.</strong><br>
+      Nama: ${customerName}<br>
+      Motor: ${bookingMotor}<br>
+      Layanan: ${bookingService}<br>
+      Tanggal: ${bookingDate}
+    `);
+
+    $("#bookingForm")[0].reset();
+  });
+
 });
