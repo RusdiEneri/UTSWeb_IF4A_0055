@@ -13,3 +13,6 @@
    Digunakan sebagai referensi gaya visual modern, card layanan, CTA, dan tampilan landing page otomotif.
 
 Desain akhir dimodifikasi pada bagian warna, konten, layout section, gambar, dan fitur interaktif agar sesuai dengan konsep Velora MotoCare sebagai layanan perawatan dan detailing motor harian.
+
+## Hasil Screenshot FullPage
+![screenshot.png](./assets/screenshot.png)
