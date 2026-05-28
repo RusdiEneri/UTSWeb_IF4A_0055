@@ -1,7 +1,7 @@
 $(document).ready(function () {
   console.log("Velora MotoCare script.js berjalan.")
 
-  /* ===== FITUR DOM 1: FILTER LAYANAN ===== */
+  /* ===== DOM FILTER LAYANAN ===== */
 
   $(".btn-filter").on("click", function () {
     const selectedCategory = $(this).data("filter");
@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
   });
 
-   /* ===== FITUR DOM 2: ESTIMATOR PAKET SERVIS ===== */
+   /* ===== DOM ESTIMATOR PAKET SERVIS ===== */
 
   $("#estimatorForm").on("submit", function (event) {
     event.preventDefault();
@@ -81,6 +81,33 @@ $(document).ready(function () {
       <strong>Total estimasi:</strong> Rp${formattedPrice}<br>
       <strong>Rekomendasi:</strong> ${recommendation}<br>
       <strong>Catatan:</strong> Estimasi ini bersifat simulasi.
+    `);
+  });
+
+  /* ===== DOM CHECKLIST MOTOR SEHAT INTERAKTIF ===== */
+
+
+  $(".health-check").on("change", function () {
+    const totalChecklist = $(".health-check").length;
+    const checkedTotal = $(".health-check:checked").length;
+
+    let status = "";
+    let statusClass = "";
+
+    if (checkedTotal >= 5) {
+      status = "Motor Aman";
+      statusClass = "text-success";
+    } else if (checkedTotal >= 3) {
+      status = "Perlu Dicek";
+      statusClass = "text-warning";
+    } else {
+      status = "Segera Servis";
+      statusClass = "text-danger";
+    }
+
+    $("#healthResult").html(`
+      <strong>Status:</strong> <span class="${statusClass}">${status}</span><br>
+      <strong>Checklist terpenuhi:</strong> ${checkedTotal} dari ${totalChecklist}
     `);
   });
 
