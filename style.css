@@ -78,6 +78,10 @@ section {
   margin-bottom: 12px;
 }
 
+.section-heading h2 span {
+  color: var(--color-orange);
+}
+
 .section-heading p {
   color: var(--color-muted);
   margin-bottom: 0;
@@ -161,6 +165,7 @@ section {
 }
 
 /* ===== SECTION: HERO ===== */
+
 .hero-section {
   color: var(--color-white);
   background:
@@ -173,6 +178,10 @@ section {
   line-height: 1.05;
   font-weight: 800;
   letter-spacing: -2px;
+}
+
+.hero-title span {
+  color: var(--color-orange);
 }
 
 .hero-description {

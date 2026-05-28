@@ -145,4 +145,46 @@ $(document).ready(function () {
     $("#bookingForm")[0].reset();
   });
 
+  // Tambahan: animate dari 0
+  const counters = document.querySelectorAll(".counter");
+
+  function animateCounter(counter) {
+    const target = Number(counter.dataset.target);
+    const suffix = counter.dataset.suffix || "";
+    const duration = 1200;
+    const startTime = performance.now();
+
+    function update(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      const value = Math.floor(progress * target);
+      counter.textContent = value + suffix;
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target + suffix;
+      }
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.5,
+    }
+  );
+
+  counters.forEach((counter) => observer.observe(counter));
+
 });
