@@ -24,4 +24,64 @@ $(document).ready(function () {
       }
     });
   });
+
+   /* ===== FITUR DOM 2: ESTIMATOR PAKET SERVIS ===== */
+
+  $("#estimatorForm").on("submit", function (event) {
+    event.preventDefault();
+
+    const motorType = $("#motorType").val();
+    const mainService = $("#mainService").val();
+    const additionalServices = $(".additional-service:checked");
+
+    if (motorType === "" || mainService === "") {
+      $("#estimatorResult").html(
+        `<span class="text-danger">Silakan pilih jenis motor dan layanan utama terlebih dahulu.</span>`
+      );
+      return;
+    }
+
+    const motorTypePrices = {
+      matic: 0,
+      bebek: 5000,
+      sport: 15000
+    };
+
+    const mainServicePrices = {
+      "ganti-oli": 45000,
+      "servis-cvt": 65000,
+      detailing: 75000,
+      "full-checkup": 120000
+    };
+
+    const additionalServicePrices = {
+      "cek-aki": 10000,
+      "cek-rem": 10000,
+      "cek-ban": 5000
+    };
+
+    let totalPrice = motorTypePrices[motorType] + mainServicePrices[mainService];
+
+    additionalServices.each(function () {
+      const selectedAdditional = $(this).val();
+      totalPrice += additionalServicePrices[selectedAdditional];
+    });
+
+    let recommendation = "Paket Basic";
+
+    if (totalPrice >= 80000 && totalPrice < 130000) {
+      recommendation = "Paket Daily Care";
+    } else if (totalPrice >= 130000) {
+      recommendation = "Paket Full Checkup";
+    }
+
+    const formattedPrice = totalPrice.toLocaleString("id-ID");
+
+    $("#estimatorResult").html(`
+      <strong>Total estimasi:</strong> Rp${formattedPrice}<br>
+      <strong>Rekomendasi:</strong> ${recommendation}<br>
+      <strong>Catatan:</strong> Estimasi ini bersifat simulasi.
+    `);
+  });
+
 });
