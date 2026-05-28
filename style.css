@@ -299,3 +299,47 @@ section {
   color: var(--color-muted);
   margin-bottom: 0;
 }
+
+/* ===== SECTION: PAKET PERAWATAN ===== */
+.pricing-card {
+  height: 100%;
+  padding: 34px;
+  border-radius: var(--radius-medium);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition-fast);
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-medium);
+}
+
+.pricing-card.featured {
+  color: var(--color-white);
+  background-color: var(--color-charcoal);
+  border-color: var(--color-charcoal);
+}
+
+.pricing-card h5 {
+  font-weight: 800;
+}
+
+.pricing-card h3 {
+  font-weight: 800;
+  color: var(--color-orange);
+}
+
+.pricing-card p {
+  color: var(--color-muted);
+}
+
+.pricing-card.featured p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.pricing-card ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
