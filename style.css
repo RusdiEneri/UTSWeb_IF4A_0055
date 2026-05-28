@@ -143,6 +143,7 @@ section {
   background-color: rgba(17, 24, 39, 0.96);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 24px rgba(17, 24, 39, 0.18);
+  border-bottom: 2px solid var(--color-orange);
 }
 
 .navbar-brand {
@@ -212,6 +213,7 @@ section {
 }
 
 /* ===== SECTION: MASALAH PENGGUNA ===== */
+
 .info-card {
   height: 100%;
   padding: 28px;
@@ -265,4 +267,35 @@ section {
 .about-highlight p {
   margin-bottom: 0;
   color: var(--color-muted);
+}
+
+/* ===== SECTION: LAYANAN ===== */
+.service-card {
+  height: 100%;
+  padding: 30px;
+  border-radius: var(--radius-medium);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition-fast);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-medium);
+}
+
+.service-card i {
+  font-size: 2.1rem;
+  color: var(--color-orange);
+  margin-bottom: 18px;
+}
+
+.service-card h5 {
+  font-weight: 800;
+}
+
+.service-card p {
+  color: var(--color-muted);
+  margin-bottom: 0;
 }
