@@ -571,6 +571,62 @@
       </div>
     </section>
 
+    <!-- ===== SECTION: Kontak & Booking Servis ===== -->
+    <section id="booking" class="section-padding bg-dark-custom text-white">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-badge">Booking</span>
+          <h2>Kontak & Booking Servis</h2>
+          <p>
+            Isi data berikut untuk simulasi booking layanan Velora MotoCare.
+          </p>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8">
+            <form id="bookingForm" class="booking-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="customerName" class="form-label">Nama</label>
+                  <input type="text" id="customerName" class="form-control" placeholder="Masukkan nama">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="bookingMotor" class="form-label">Jenis Motor</label>
+                  <input type="text" id="bookingMotor" class="form-control" placeholder="Contoh: Honda BeAT">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="bookingService" class="form-label">Layanan</label>
+                  <select id="bookingService" class="form-select">
+                    <option value="">Pilih layanan</option>
+                    <option value="Servis Ringan">Servis Ringan</option>
+                    <option value="Servis CVT">Servis CVT</option>
+                    <option value="Detailing Body">Detailing Body</option>
+                    <option value="Full Checkup">Full Checkup</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="bookingDate" class="form-label">Tanggal Booking</label>
+                  <input type="date" id="bookingDate" class="form-control">
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom">
+                    Kirim Booking
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div id="bookingResult" class="result-box mt-4">
+              Data booking akan muncul di sini.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 <script>
