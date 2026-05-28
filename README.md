@@ -20,4 +20,4 @@ Desain akhir dimodifikasi pada bagian warna, konten, layout section, gambar, dan
 ---
 
 ## Hasil Screenshot Mobile FullPage
-![screenshot.png](./assets/screenshotMobile.png)
+![screenshot.jpg](./assets/screenshotMobile.jpg)
