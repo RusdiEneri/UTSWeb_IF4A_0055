@@ -455,3 +455,31 @@ section {
   color: rgba(255, 255, 255, 0.72);
   background-color: #0B1120;
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+  .section-padding {
+    padding: 76px 0;
+  }
+
+  .hero-section {
+    padding-top: 70px;
+  }
+
+  .about-highlight {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-actions .btn {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .estimator-box,
+  .checklist-box,
+  .booking-form {
+    padding: 24px;
+  }
+}
