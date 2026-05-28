@@ -448,3 +448,10 @@ section {
 #booking .booking-form {
   color: var(--color-charcoal);
 }
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 28px 0;
+  color: rgba(255, 255, 255, 0.72);
+  background-color: #0B1120;
+}
