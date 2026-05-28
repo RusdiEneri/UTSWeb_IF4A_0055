@@ -389,3 +389,29 @@ section {
   font-weight: 600;
 }
 
+/* ===== SECTION: GALERI ===== */
+.gallery-card {
+  overflow: hidden;
+  border-radius: var(--radius-medium);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.gallery-placeholder {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-weight: 800;
+  background:
+    linear-gradient(135deg, rgba(17, 24, 39, 0.94), rgba(249, 115, 22, 0.88));
+}
+
+.gallery-card h5 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 800;
+}
+
