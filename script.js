@@ -187,4 +187,46 @@ $(document).ready(function () {
 
   counters.forEach((counter) => observer.observe(counter));
 
+  // Tambahan: efek ketik untuk hero section
+   const typingText = document.getElementById("typing-text");
+
+  const words = [
+    "Sehat Tiap Hari.",
+    "Enak Tiap Hari.",
+    "Aman Tiap Hari."
+  ];
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+    const currentWord = words[wordIndex];
+
+    if (isDeleting) {
+      typingText.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typingText.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+    }
+
+    let speed = isDeleting ? 45 : 85;
+
+    if (!isDeleting && charIndex === currentWord.length) {
+      speed = 1400;
+      isDeleting = true;
+    }
+
+    if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      speed = 400;
+    }
+
+    setTimeout(typeEffect, speed);
+  }
+
+  typeEffect();
+
 });
