@@ -330,6 +330,13 @@ section {
 }
 
 /* ===== SECTION: PAKET PERAWATAN ===== */
+.price-title {
+  white-space: nowrap;
+}
+
+.price-counter {
+  display: inline;
+}
 .pricing-card {
   height: 100%;
   padding: 34px;

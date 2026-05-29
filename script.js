@@ -145,47 +145,54 @@ $(document).ready(function () {
     $("#bookingForm")[0].reset();
   });
 
-  // Tambahan: animate dari 0
-  const counters = document.querySelectorAll(".counter");
+ // Tambahan: animate dari 0
+const counters = document.querySelectorAll(".counter");
+const hargaCounters = document.querySelectorAll(".price-counter");
 
-  function animateCounter(counter) {
-    const target = Number(counter.dataset.target);
-    const suffix = counter.dataset.suffix || "";
-    const duration = 1200;
-    const startTime = performance.now();
+function formatNumber(value) {
+  return Number(value).toLocaleString("id-ID");
+}
 
-    function update(currentTime) {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
+function animateCounter(counter) {
+  const target = Number(counter.dataset.target);
+  const suffix = counter.dataset.suffix || "";
+  const duration = 1200;
+  const startTime = performance.now();
 
-      const value = Math.floor(progress * target);
-      counter.textContent = value + suffix;
+  function update(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
 
-      if (progress < 1) {
-        requestAnimationFrame(update);
-      } else {
-        counter.textContent = target + suffix;
-      }
+    const value = Math.floor(progress * target);
+    counter.textContent = formatNumber(value) + suffix;
+
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    } else {
+      counter.textContent = formatNumber(target) + suffix;
     }
-
-    requestAnimationFrame(update);
   }
 
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.5,
-    }
-  );
+  requestAnimationFrame(update);
+}
 
-  counters.forEach((counter) => observer.observe(counter));
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+counters.forEach((counter) => observer.observe(counter));
+hargaCounters.forEach((counter) => observer.observe(counter));
+  
 
   // Tambahan: efek ketik untuk hero section
    const typingText = document.getElementById("typing-text");
