@@ -15,9 +15,9 @@
 Desain akhir dimodifikasi pada bagian warna, konten, layout section, gambar, dan fitur interaktif agar sesuai dengan konsep Velora MotoCare sebagai layanan perawatan dan detailing motor harian.
 
 ## Hasil Screenshot Desktop FullPage
-!(./assets/screenshotDesktop.png)
+![](./assets/screenshotDesktop.png)
 
 ---
 
 ## Hasil Screenshot Mobile FullPage
-!(./assets/screenshotMobile.jpg)
+![](./assets/screenshotMobile.jpg)
