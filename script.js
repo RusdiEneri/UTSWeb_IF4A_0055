@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  console.log("Velora MotoCare script.js berjalan.")
+  console.log("Velora MotoCare script.js berjalan.");
 
   /* ===== DOM FILTER LAYANAN ===== */
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
   });
 
-   /* ===== DOM ESTIMATOR PAKET SERVIS ===== */
+  /* ===== DOM ESTIMATOR PAKET SERVIS ===== */
 
   $("#estimatorForm").on("submit", function (event) {
     event.preventDefault();
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     if (motorType === "" || mainService === "") {
       $("#estimatorResult").html(
-        `<span class="text-danger">Silakan pilih jenis motor dan layanan utama terlebih dahulu.</span>`
+        `<span class="text-danger">Silakan pilih jenis motor dan layanan utama terlebih dahulu.</span>`,
       );
       return;
     }
@@ -44,23 +44,24 @@ $(document).ready(function () {
     const motorTypePrices = {
       matic: 0,
       bebek: 5000,
-      sport: 15000
+      sport: 15000,
     };
 
     const mainServicePrices = {
       "ganti-oli": 45000,
       "servis-cvt": 65000,
       detailing: 75000,
-      "full-checkup": 120000
+      "full-checkup": 120000,
     };
 
     const additionalServicePrices = {
       "cek-aki": 10000,
       "cek-rem": 10000,
-      "cek-ban": 5000
+      "cek-ban": 5000,
     };
 
-    let totalPrice = motorTypePrices[motorType] + mainServicePrices[mainService];
+    let totalPrice =
+      motorTypePrices[motorType] + mainServicePrices[mainService];
 
     additionalServices.each(function () {
       const selectedAdditional = $(this).val();
@@ -85,7 +86,6 @@ $(document).ready(function () {
   });
 
   /* ===== DOM CHECKLIST MOTOR SEHAT INTERAKTIF ===== */
-
 
   $(".health-check").on("change", function () {
     const totalChecklist = $(".health-check").length;
@@ -129,79 +129,76 @@ $(document).ready(function () {
       bookingDate === ""
     ) {
       $("#bookingResult").html(
-        `<span class="text-danger">Semua field booking wajib diisi.</span>`
+        `<span class="text-danger">Semua field booking wajib diisi.</span>`,
       );
       return;
     }
 
+    // Display booking locally (no server persistence)
     $("#bookingResult").html(`
-      <strong>Booking berhasil dibuat.</strong><br>
-      Nama: ${customerName}<br>
-      Motor: ${bookingMotor}<br>
-      Layanan: ${bookingService}<br>
-      Tanggal: ${bookingDate}
+      <div class="p-3 bg-white text-dark rounded">
+        <strong class='text-success'>Booking berhasil (simulasi).</strong><br>
+        Nama: ${customerName}<br>
+        Motor: ${bookingMotor}<br>
+        Layanan: ${bookingService}<br>
+        Tanggal: ${bookingDate}
+      </div>
     `);
-
     $("#bookingForm")[0].reset();
   });
 
- // Tambahan: animate dari 0
-const counters = document.querySelectorAll(".counter");
-const hargaCounters = document.querySelectorAll(".price-counter");
+  // Tambahan: animate dari 0
+  const counters = document.querySelectorAll(".counter");
+  const hargaCounters = document.querySelectorAll(".price-counter");
 
-function formatNumber(value) {
-  return Number(value).toLocaleString("id-ID");
-}
-
-function animateCounter(counter) {
-  const target = Number(counter.dataset.target);
-  const suffix = counter.dataset.suffix || "";
-  const duration = 1200;
-  const startTime = performance.now();
-
-  function update(currentTime) {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-
-    const value = Math.floor(progress * target);
-    counter.textContent = formatNumber(value) + suffix;
-
-    if (progress < 1) {
-      requestAnimationFrame(update);
-    } else {
-      counter.textContent = formatNumber(target) + suffix;
-    }
+  function formatNumber(value) {
+    return Number(value).toLocaleString("id-ID");
   }
 
-  requestAnimationFrame(update);
-}
+  function animateCounter(counter) {
+    const target = Number(counter.dataset.target);
+    const suffix = counter.dataset.suffix || "";
+    const duration = 1200;
+    const startTime = performance.now();
 
-const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        animateCounter(entry.target);
-        observer.unobserve(entry.target);
+    function update(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      const value = Math.floor(progress * target);
+      counter.textContent = formatNumber(value) + suffix;
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = formatNumber(target) + suffix;
       }
-    });
-  },
-  {
-    threshold: 0.5,
-  }
-);
+    }
 
-counters.forEach((counter) => observer.observe(counter));
-hargaCounters.forEach((counter) => observer.observe(counter));
-  
+    requestAnimationFrame(update);
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.5,
+    },
+  );
+
+  counters.forEach((counter) => observer.observe(counter));
+  hargaCounters.forEach((counter) => observer.observe(counter));
 
   // Tambahan: efek ketik untuk hero section
-   const typingText = document.getElementById("typing-text");
+  const typingText = document.getElementById("typing-text");
 
-  const words = [
-    "Sehat Tiap Hari.",
-    "Enak Tiap Hari.",
-    "Aman Tiap Hari."
-  ];
+  const words = ["Sehat Tiap Hari.", "Enak Tiap Hari.", "Aman Tiap Hari."];
 
   let wordIndex = 0;
   let charIndex = 0;
@@ -235,5 +232,4 @@ hargaCounters.forEach((counter) => observer.observe(counter));
   }
 
   typeEffect();
-
 });

@@ -13,6 +13,7 @@ if (empty($_SESSION['admin_id'])) {
   <title>Admin - Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
   <style>
     .admin-wrapper{display:flex}
     .sidebar-area{width:240px;flex:0 0 240px}
@@ -54,5 +55,8 @@ if (empty($_SESSION['admin_id'])) {
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../assets/js/admin.js"></script>
 </body>
 </html>

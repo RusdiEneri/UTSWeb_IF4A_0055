@@ -13,6 +13,9 @@
     <li class="nav-item mb-2">
       <a class="nav-link text-white" href="services.php">Manajemen Layanan</a>
     </li>
+    <li class="nav-item mb-2">
+      <a class="nav-link text-white" href="bookings.php">Manajemen Booking</a>
+    </li>
     <li class="nav-item mt-3">
       <a class="btn btn-primary-custom" href="../logout.php">Logout</a>
     </li>

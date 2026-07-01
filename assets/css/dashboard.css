@@ -1,0 +1,74 @@
+/* Dashboard styles (user) — uses design tokens from style.css */
+.dashboard-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+}
+.dash-sidebar {
+  width: 260px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 18px;
+}
+.dash-main {
+  flex: 1;
+}
+.widget {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: var(--shadow-soft);
+}
+.widget + .widget {
+  margin-top: 16px;
+}
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.summary-card {
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff, var(--color-off-white));
+}
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+.timeline li {
+  padding: 12px 0;
+  border-left: 3px solid rgba(0, 0, 0, 0.04);
+  margin-left: 8px;
+  position: relative;
+}
+.timeline li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-orange);
+  position: absolute;
+  left: -8px;
+  top: 14px;
+}
+.booking-wizard .step {
+  display: none;
+}
+.booking-wizard .step.active {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+  .dash-sidebar {
+    width: 100%;
+  }
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

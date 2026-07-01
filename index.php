@@ -336,7 +336,272 @@ try {
       </div>
     </section>
 
-    <!-- rest of file unchanged... -->
+    <!-- ===== SECTION: Simulasi Estimasi Biaya ===== -->
+    <section id="estimator" class="section-padding">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-badge">Estimator</span>
+          <h2>Simulasi Estimasi <span>Biaya Servis</span></h2>
+          <p>
+            Pilih jenis motor dan layanan untuk melihat estimasi awal.
+          </p>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8">
+            <div class="estimator-box">
+              <form id="estimatorForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="motorType" class="form-label">Jenis Motor</label>
+                    <select id="motorType" class="form-select">
+                      <option value="">Pilih jenis motor</option>
+                      <option value="matic">Matic</option>
+                      <option value="bebek">Bebek</option>
+                      <option value="sport">Sport</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="mainService" class="form-label">Layanan Utama</label>
+                    <select id="mainService" class="form-select">
+                      <option value="">Pilih layanan</option>
+                      <option value="ganti-oli">Ganti Oli</option>
+                      <option value="servis-cvt">Servis CVT</option>
+                      <option value="detailing">Detailing Body</option>
+                      <option value="full-checkup">Full Checkup</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label">Tambahan</label>
+
+                    <div class="form-check">
+                      <input class="form-check-input additional-service" type="checkbox" value="cek-aki" id="cekAki">
+                      <label class="form-check-label" for="cekAki">Cek Aki</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input additional-service" type="checkbox" value="cek-rem" id="cekRem">
+                      <label class="form-check-label" for="cekRem">Cek Rem</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input additional-service" type="checkbox" value="cek-ban" id="cekBan">
+                      <label class="form-check-label" for="cekBan">Cek Ban</label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary-custom">
+                      Hitung Estimasi
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <div id="estimatorResult" class="result-box mt-4">
+                Estimasi biaya akan muncul di sini.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: Checklist Motor Sehat ===== -->
+    <section id="checklist" class="section-padding bg-light-custom">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-badge">Checklist</span>
+          <h2>Checklist Motormu <span>Sekarang!</span></h2>
+          <p>
+            Centang kondisi motor saat ini untuk melihat status sederhana.
+          </p>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8">
+            <div class="checklist-box">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input class="form-check-input health-check" type="checkbox" id="oliCheck">
+                  <label for="oliCheck">Oli sudah diganti</label>
+                </div>
+
+                <div class="col-md-6">
+                  <input class="form-check-input health-check" type="checkbox" id="remCheck">
+                  <label for="remCheck">Rem pakem</label>
+                </div>
+
+                <div class="col-md-6">
+                  <input class="form-check-input health-check" type="checkbox" id="banCheck">
+                  <label for="banCheck">Ban tidak gundul</label>
+                </div>
+
+                <div class="col-md-6">
+                  <input class="form-check-input health-check" type="checkbox" id="lampuCheck">
+                  <label for="lampuCheck">Lampu normal</label>
+                </div>
+
+                <div class="col-md-6">
+                  <input class="form-check-input health-check" type="checkbox" id="akiCheck">
+                  <label for="akiCheck">Aki kuat</label>
+                </div>
+
+                <div class="col-md-6">
+                  <input class="form-check-input health-check" type="checkbox" id="tarikanCheck">
+                  <label for="tarikanCheck">Tarikan halus</label>
+                </div>
+              </div>
+
+              <div id="healthResult" class="result-box mt-4">
+                Status motor akan muncul setelah checklist diisi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: Galeri Before After ===== -->
+    <section id="gallery" class="section-padding">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-badge">Galeri</span>
+          <h2>Galeri Proses <span>Pengerjaan</span></h2>
+          <p>
+            Hasil perawatan dan detailing motor harian.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <div class="gallery-placeholder">
+                <img src="./assets/detailing.jpg" alt="Proses Detailing Body Matic" class="img-fluid">
+              </div>
+              <h5>Detailing Body Matic</h5>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <div class="gallery-placeholder">
+                <img src="./assets/pembersihanCVT.jpg" alt="Proses Pembersihan Area CVT" class="img-fluid">
+              </div>
+              <h5>Pembersihan Area CVT</h5>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <div class="gallery-placeholder">
+                <img src="./assets/checkUP.jpg" alt="Proses Full Checkup Motor Harian" class="img-fluid">
+              </div>
+              <h5>Full Checkup Harian</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- ===== SECTION: Testimoni Pelanggan ===== -->
+    <section id="testimonials" class="section-padding bg-light-custom">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-badge">Testimoni</span>
+          <h2>Ulasan <span>Pelanggan</span></h2>
+          <p>
+            Berberapa masukan dari pengguna motor harian setelah memakai layanan dari Velora MotoCare.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <p>“Motor jadi lebih enteng dan saya jadi tahu bagian mana yang harus dicek secara rutin di website ini.”</p>
+              <h6>Raka</h6>
+              <span>Pengguna motor matic</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <p>“Estimator biayanya sangat membantu sebelum membooking servis ke bengkel terdekat.”</p>
+              <h6>Dina</h6>
+              <span>Mahasiswa</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <p>“Checklist motornya sederhana tetapi sangat amat berguna untuk pengguna harian seperti Saya.”</p>
+              <h6>Fajar</h6>
+              <span>Pekerja harian</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: Kontak & Booking Servis ===== -->
+    <section id="booking" class="section-padding bg-dark-custom text-white">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-badge">Booking</span>
+          <h2>Kontak & <span>Booking Servis</span></h2>
+          <p>
+            Isi data berikut untuk simulasi booking layanan Velora MotoCare.
+          </p>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8">
+            <form id="bookingForm" class="booking-form" action="#" method="post">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="customerName" class="form-label">Nama</label>
+                  <input type="text" id="customerName" name="customer_name" class="form-control" placeholder="Masukkan nama">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="bookingMotor" class="form-label">Jenis Motor</label>
+                  <input type="text" id="bookingMotor" name="motor_type" class="form-control" placeholder="Contoh: Honda BeAT">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="bookingService" class="form-label">Layanan</label>
+                  <select id="bookingService" name="service" class="form-select">
+                    <option value="">Pilih layanan</option>
+                    <option value="Servis Ringan">Servis Ringan</option>
+                    <option value="Servis CVT">Servis CVT</option>
+                    <option value="Detailing Body">Detailing Body</option>
+                    <option value="Full Checkup">Full Checkup</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="bookingDate" class="form-label">Tanggal Booking</label>
+                  <input type="date" id="bookingDate" name="booking_date" class="form-control">
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom">
+                    Kirim Booking
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div id="bookingResult" class="result-box mt-4">
+              Data booking akan muncul di sini.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
     <!-- footer and scripts copied from original -->
   <footer class="footer">
@@ -346,10 +611,8 @@ try {
     </div>
   </footer>
 
-  <!-- jQuery Slim CDN -->
-  <script
-    src="https://code.jquery.com/jquery-3.7.1.slim.min.js">
-  </script>
+  <!-- jQuery CDN (full build for AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
   <!-- Bootstrap 5 JS Bundle -->
   <script

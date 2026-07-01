@@ -22,6 +22,8 @@ try {
   <title>Admin - Manajemen Layanan</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
   <style>.table-img{width:80px;height:auto;object-fit:cover;border-radius:8px}</style>
 </head>
 <body>
@@ -45,7 +47,7 @@ try {
         <div class="card">
           <div class="card-body">
             <div class="table-responsive">
-              <table class="table table-striped table-hover">
+              <table id="servicesTable" class="table table-striped table-hover" style="width:100%">
                 <thead>
                   <tr>
                     <th>#</th>
@@ -90,5 +92,23 @@ try {
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="../assets/js/admin.js"></script>
+  <!-- Detail modal -->
+  <div class="modal fade modal-fade-scale" id="modalDetail" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detail Layanan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Konten akan dimuat...</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
