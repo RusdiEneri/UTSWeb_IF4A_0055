@@ -79,5 +79,3 @@ Lokasi penting dalam repo
 Kontribusi & catatan pengembang
 
 - Proyek ini ditujukan sebagai proyek latihan/presentasi; beberapa fitur (seperti booking persistence dan reset password helper) dibuat untuk pengujian lokal dan perlu diamankan atau dihapus sebelum deployment ke publik.
-
-Jika Anda ingin saya mengembalikan penyimpanan booking ke server atau menyimpan simulasi booking di `localStorage`, beri tahu — saya akan implementasikan sesuai preferensi Anda.
