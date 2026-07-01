@@ -1,0 +1,172 @@
+/* Landing page styles — uses design tokens from style.css */
+:root {
+  --velora-accent: var(--color-orange);
+  --velora-char: var(--color-charcoal);
+}
+
+/* override hero card to be layered */
+.hero-layer {
+  position: relative;
+  overflow: visible;
+}
+.hero-blob {
+  position: absolute;
+  right: -6%;
+  top: -12%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(249, 115, 22, 0.22),
+    rgba(249, 115, 22, 0.06) 40%,
+    transparent 60%
+  );
+  border-radius: 40%;
+  transform: rotate(-12deg);
+  filter: blur(6px);
+  z-index: 0;
+}
+.hero-card {
+  position: relative;
+  z-index: 2;
+}
+
+.service-card {
+  transition:
+    transform 0.28s var(--transition-fast),
+    box-shadow 0.28s var(--transition-fast);
+  border-radius: 16px;
+}
+.service-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: var(--shadow-medium);
+}
+.service-card {
+  position: relative;
+  overflow: hidden;
+}
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 16px;
+  background: radial-gradient(
+    400px 200px at var(--mx, 50%) var(--my, 50%),
+    rgba(249, 115, 22, 0.1),
+    transparent 10%
+  );
+  opacity: 0;
+  transition: opacity 0.28s;
+}
+.service-card.hovered::before {
+  opacity: 1;
+}
+.service-card .price-badge {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: var(--velora-accent);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-weight: 700;
+  transform: translateY(-6px);
+  opacity: 0;
+  transition: all 0.28s;
+}
+.service-card:hover .price-badge {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.filter-buttons .btn-filter {
+  transition: all 0.24s;
+}
+.filter-buttons .btn-filter.active {
+  background: var(--velora-accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* pricing featured */
+.pricing-card.featured {
+  border-radius: 20px;
+  transform: translateY(-6px);
+  transition: transform 0.4s;
+}
+.pricing-card.featured .price-title {
+  color: var(--velora-accent);
+}
+
+/* testimonial center stage */
+.testimonial-stage {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-card {
+  transition:
+    transform 0.36s,
+    box-shadow 0.36s;
+}
+.testimonial-card.is-active {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-medium);
+}
+
+/* testimonial controls */
+.testimonial-controls {
+  margin-top: 18px;
+}
+
+/* estimator result flip */
+.estimator-box {
+  perspective: 900px;
+}
+.estimator-result {
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+.estimator-result.flipped {
+  transform: rotateX(180deg);
+}
+.estimator-front,
+.estimator-back {
+  backface-visibility: hidden;
+  min-height: 80px;
+}
+.estimator-back {
+  transform: rotateX(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* skeleton placeholders for services */
+.service-item.skeleton .service-card {
+  min-height: 160px;
+  background: #fff;
+}
+.service-item.skeleton .service-card * {
+  visibility: hidden;
+}
+
+/* navbar shrink */
+.navbar.shrink {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  transition: padding 0.28s;
+}
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+  .hero-blob {
+    display: none;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+}

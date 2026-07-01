@@ -33,6 +33,8 @@ try {
   >
   <!-- CSS Local -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/landing.css">
   <title>Velora MotoCare | Perawatan dan Detailing Motor Harian</title>
   <link rel="icon" type="image/x-icon" href="./assets/icons.png">
 </head>
@@ -353,6 +355,10 @@ try {
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
   </script>
+
+  <!-- AOS for scroll animations -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
 
   <!-- Custom JavaScript -->
   <script src="script.js"></script>
