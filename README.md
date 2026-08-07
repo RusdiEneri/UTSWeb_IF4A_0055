@@ -85,10 +85,10 @@ Kontribusi & catatan pengembang
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Mereka bilang dunia akan berubah jika kau berubah, tapi itu bohong.
-Mereka hanya memaksamu untuk berkompromi dengan berbohong. ❞</i>
+  <i>❝ Tak ada alasan bagiku untuk bicara dengan seseorang yang bermain sangat menyedihkan. Jika kau ingin mengatakan sesuatu,
+kau bisa memberitahukannya padaku, dengan permainanmu. ❞</i>
   <br/>
-  <sub>— <b>Hachiman Hikigaya</b> · <i>Yahari Ore no Seishun Love Comedy wa Machigatteiru</i></sub>
+  <sub>— <b>Shintarou Midorima</b> · <i>Kuroko no Basket</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
