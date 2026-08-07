@@ -85,9 +85,10 @@ Kontribusi & catatan pengembang
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Aku (orang yang) lemah, bodoh, punya tatapan mata yang jelek dan tak bisa membaca situasi. Tapi aku tetap menjalani hidupku tanpa mempedulikan penilaian orang terhadapku. Selama kita bisa saling bersandar satu sama lain dan terus melangkah maju, itu saja sudah cukup. Saling bergantung satu sama lain sambil tertawa bersama..., mari kita membicarakan hari esok untuk masa depan (bersama). ❞</i>
+  <i>❝ Apapun pertaruhan yang disepakati, harus dipenuhi.
+Pemenangnya (untuk sekarang) memang kau, tapi hanya untuk sementara. ❞</i>
   <br/>
-  <sub>— <b>Subaru Natsuki</b> · <i>Re:Zero kara Hajimeru Isekai Seikatsu</i></sub>
+  <sub>— <b>Sora</b> · <i>No Game No Life</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
