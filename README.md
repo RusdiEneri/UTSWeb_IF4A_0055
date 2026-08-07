@@ -85,9 +85,9 @@ Kontribusi & catatan pengembang
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Tanpa rasa ingin tahu dan emosi, kau tidak akan puas dengan hobimu. ❞</i>
+  <i>❝ Hidup itu untuk membuat kita jadi lebih baik. Meski hanya sedikit, aku ingin diriku hari ini lebih baik dari diriku yang kemarin. Begitulah aku menjalani hidup. ❞</i>
   <br/>
-  <sub>— <b>Soune</b> · <i>Kobayashi-san Chi no Maid Dragon S</i></sub>
+  <sub>— <b>Shouko Makinohara</b> · <i>Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
