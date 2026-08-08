@@ -85,9 +85,10 @@ Kontribusi & catatan pengembang
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Tidak layak mempertaruhkan hidup seseorang, tak peduli berapapun keuntungan yang akan didapat. ❞</i>
+  <i>❝ Demi menyelamatkan nyawamu, nyawa orang lain harus dikorbankan.
+Seperti itulah cara hidup "hewan". ❞</i>
   <br/>
-  <sub>— <b>Kraft Lawrence</b> · <i>Ookami to Koushinryou</i></sub>
+  <sub>— <b>Migi</b> · <i>Kiseijuu: Sei no Kakuritsu</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
