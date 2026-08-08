@@ -85,9 +85,9 @@ Kontribusi & catatan pengembang
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Kalian mudah sekali menyerah. Jika kalian ingin menangis, lakukanlah setelah (kalian) bekerja keras! ❞</i>
+  <i>❝ Kami sudah terbiasa diseret olehmu. Jadi, sebagai gantinya, bawalah kami ke dunia yang belum pernah kami lihat. ❞</i>
   <br/>
-  <sub>— <b>Seiya Kanie</b> · <i>Amagi Brilliant Park</i></sub>
+  <sub>— <b>Umi Sonoda</b> · <i>Love Live! School Idol Project</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
