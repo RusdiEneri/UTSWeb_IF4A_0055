@@ -85,9 +85,11 @@ Kontribusi & catatan pengembang
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Aku ingin percaya padamu, tapi kau tak mau memberiku alasan untuk percaya padamu! ❞</i>
+  <i>❝ Aku akan terus mengatakannya!
+Jangan pernah berhenti membuat game, jangan berhenti berkarya.
+Kau tidak boleh menyerah mengejar impianmu. ❞</i>
   <br/>
-  <sub>— <b>Emilia</b> · <i>Re:Zero kara Hajimeru Isekai Seikatsu</i></sub>
+  <sub>— <b>Iori Hashima</b> · <i>Saenai Heroine no Sodatekata ♭</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
