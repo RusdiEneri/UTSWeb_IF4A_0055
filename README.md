@@ -85,9 +85,9 @@ Kontribusi & catatan pengembang
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Tidak peduli di garis dunia mana pun, di waktu kapanpun atau dimanapun, aku selalu menyukaimu. ❞</i>
+  <i>❝ Aku sudah bukan anak kecil yang selalu ingin menang kalau bersaing. ❞</i>
   <br/>
-  <sub>— <b>Rintarou Okabe</b> · <i>Steins;Gate: Oukoubakko no Poriomania</i></sub>
+  <sub>— <b>Megumin</b> · <i>Kono Subarashii Sekai ni Shukufuku wo! 2</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
