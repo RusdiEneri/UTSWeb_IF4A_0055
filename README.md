@@ -85,10 +85,9 @@ Kontribusi & catatan pengembang
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ The Zone adalah keahlian yang hanya dimiliki dan disempurnakan oleh mereka yang benar-benar normal.
-Karakter utamanya adalah mereka dapat menahan situasi. Karena mereka senang dengan kehidupannya, mereka dapat membahagiakan yang sedang murung. Ini adalah aura unik dari karismatik "orang baik". ❞</i>
+  <i>❝ Dengarlah, Rin. Kalau terus begini, kau akan selalu sendirian. Gunakanlah kekuatanmu untuk orang lain, untuk tujuan yang lebih mulia. Aku ingin kau menjadi laki-laki yang keren dengan banyak teman, dan disukai oleh para gadis! ❞</i>
   <br/>
-  <sub>— <b>Hachiman Hikigaya</b> · <i>Yahari Ore no Seishun Love Comedy wa Machigatteiru</i></sub>
+  <sub>— <b>Shirou Fujimoto</b> · <i>Ao no Exorcist</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
