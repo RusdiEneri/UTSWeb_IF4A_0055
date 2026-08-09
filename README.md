@@ -85,9 +85,9 @@ Kontribusi & catatan pengembang
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Kenapa kau bisa percaya pada makhluk hidup lemah seperti manusia? Jawabannya sederhana, aku tak percaya pada umat manusia. Manusia itu rendah, mereka semua adalah makhluk bodoh, termasuk aku. Mereka semua hanyalah sampah. Manusia di dunia ini dan duniaku tak ada bedanya sama sekali. Tapi aku percaya pada potensi umat manusia. Dialah (Shiro) bukti yang kupunya. Manusia berpotensi itu ada. Manusia berpotensi, memiliki harapan, dan fantasi yang dapat menggapai tempat dewa itu sendiri, dan semua itu tersimpan dalam tubuh kecil (nya). ❞</i>
+  <i>❝ Aku sedang bersaing dengan ayahku. Dan aku harus melakukan sesuatu yang hebat agar dia mau mengakuiku. ❞</i>
   <br/>
-  <sub>— <b>Sora</b> · <i>No Game No Life</i></sub>
+  <sub>— <b>Souma Yukihira</b> · <i>Shokugeki no Souma</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
